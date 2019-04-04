@@ -16,7 +16,7 @@ function generateSquare(myLength, myStr){
   if((sq%1) === 0){
     console.log('We found a prefect Square!');
     col = row = sq;
-    console.log("Our array is " + col + " x " + row + "!");
+    console.log("Our array is " + row + " x " + col + "!");
   }else{
     col = Math.round(sq);
     console.log('Number of Columns is ' + col);
@@ -51,9 +51,9 @@ function printArray(myCol, myRow){
         arrStr += 'C ';
       }
       if(i === (myCol - 1)){
-        arrStr += '[' +i+ ',' +j+ ']\n';
+        arrStr += '[' +j+ ',' +i+ ']\n';
       }else{
-        arrStr += '[' +i+ ',' +j+ ']';
+        arrStr += '[' +j+ ',' +i+ ']';
       }
     }
   }
