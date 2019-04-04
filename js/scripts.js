@@ -27,6 +27,7 @@ function generateSquare(myLength, myStr){
   printArray(col, row);
   answerStr = cryptoLogic(col, row, mySquare);
   console.log(answerStr);
+  return answerStr;
 };
 
 function whichSq(myCol, myLength){
@@ -120,5 +121,6 @@ $(document).ready(function(){
     console.log('Sentence that was input is: [' + inputStr + ']');
     len = inputStr.length;
     generateSquare(len, inputStr);
+    $('#myAns p').text(answerStr);
   });
 });
